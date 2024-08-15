@@ -2,12 +2,13 @@
 import React, { useRef } from 'react';
 import { MeshTransmissionMaterial, useGLTF, Text } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
+import { Mesh } from 'three'; // 引入 Mesh 类型
 import { useControls } from 'leva';
 
 export default function Model() {
   const { nodes } = useGLTF('/static/L3DL2.glb');
   const { viewport } = useThree();
-  const modelRef = useRef(null);
+  const modelRef = useRef<Mesh>(null); // 定义 modelRef 为指向 Mesh 对象的引用
 
   useFrame(() => {
     if (modelRef.current) {
