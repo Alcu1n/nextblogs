@@ -10,8 +10,10 @@ export default function Model() {
   const modelRef = useRef(null);
 
   useFrame(() => {
-    modelRef.current.rotation.y += -0.008;
-    modelRef.current.rotation.z += -0.008;
+    if (modelRef.current) {
+      modelRef.current.rotation.y += -0.008;
+      modelRef.current.rotation.z += -0.008;
+    }
   });
 
   const materialProps = useControls({
