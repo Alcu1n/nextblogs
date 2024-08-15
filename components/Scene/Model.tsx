@@ -47,7 +47,7 @@ export default function Model() {
         maxWidth={6}
         style={{ fontFamily: 'Mukta' }}
       >
-        前端&LLM
+        前端 & LLM
       </Text>
       {/* 第二行文字 */}
       <Text
