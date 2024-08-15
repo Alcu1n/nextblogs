@@ -36,7 +36,7 @@ export default function Model() {
         anchorX="left"
         anchorY="middle"
         maxWidth={5}
-        style={{ fontFamily: 'Mukta' }}
+        font="/fonts/Mukta-Regular.ttf"
       >
         莱
       </Text>
@@ -48,7 +48,7 @@ export default function Model() {
         anchorX="left"
         anchorY="middle"
         maxWidth={6}
-        style={{ fontFamily: 'Mukta' }}
+        font="/fonts/Mukta-Regular.ttf"
       >
         前端 & LLM
       </Text>
@@ -60,7 +60,7 @@ export default function Model() {
         anchorX="left"
         anchorY="middle"
         maxWidth={4}
-        style={{ fontFamily: 'Mukta' }}
+        font="/fonts/Mukta-Regular.ttf"
       >
         Exploring the frontiers of AI and the web.
       </Text>
