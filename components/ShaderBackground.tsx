@@ -35,9 +35,9 @@ export default function ShaderBackground({ children }: ShaderBackgroundProps) {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative min-h-screen">
+    <div ref={containerRef} className="relative min-h-screen z-10">
       {/* Full-screen Background Shaders */}
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 z-0">
         <MeshGradient
           className="absolute inset-0 w-full h-full"
           colors={['#000000', '#8b5cf6', '#ffffff', '#1e1b4b', '#4c1d95']}
