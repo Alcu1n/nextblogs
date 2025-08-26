@@ -18,6 +18,7 @@
     "@dlarroder/playground": "1.10.0",
     "@fontsource/mukta": "5.0.18",
     "@octokit/rest": "^21.0.1",
+    "@paper-design/shaders-react": "^0.0.46",
     "@react-three/drei": "^9.111.1",
     "@react-three/fiber": "^8.17.5",
     "@studio-freight/react-lenis": "0.0.36",

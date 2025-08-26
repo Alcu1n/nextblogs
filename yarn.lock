@@ -2317,6 +2317,18 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/semantic-conventions/-/semantic-conventions-1.17.1.tgz#93d219935e967fbb9aa0592cc96b2c0ec817a56f"
   integrity sha512-xbR2U+2YjauIuo42qmE8XyJK6dYeRMLJuOlUP5SO4auET4VtOHOzgkRVOq+Ik18N+Xf3YPcqJs9dZMiDddz1eQ==
 
+"@paper-design/shaders-react@^0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@paper-design/shaders-react/-/shaders-react-0.0.46.tgz#b3c879c1b9f18ad430e08314709d05eb2bf7bd51"
+  integrity sha512-bvgLvw8Cozmhw1spRmaabT/bh3N4G/Qq6Mb8yOWvWccTmo1UB7YKhEDbHbgCevvry2BgPGotrlfCE+YGeDeY7g==
+  dependencies:
+    "@paper-design/shaders" "0.0.46"
+
+"@paper-design/shaders@0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@paper-design/shaders/-/shaders-0.0.46.tgz#5a5fd83bb3b6178a5b6abd40a297a3d20db66858"
+  integrity sha512-ErPQwLguvv7qI8E+bdwSaNQF27Q8MnZmtD8rGp+K473AYee+cXWv2OqBkKnuMl/n1JmL8vBxSSTflOfO6DB4aQ==
+
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
