@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { ReactElement, useContext, useRef } from 'react';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { ScrollContext } from './Providers/ScrollProvider';
-import ShaderBackground from './ShaderBackground';
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -19,7 +18,7 @@ export default function Hero(): ReactElement {
   }
 
   return (
-    <ShaderBackground>
+    <>
       <h1 className="sr-only">我是莱, 一位前端&LLM工程师，love building things for the web.</h1>
       <div className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]">
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
@@ -59,6 +58,6 @@ export default function Hero(): ReactElement {
           </div>
         </div>
       </div>
-    </ShaderBackground>
+    </>
   );
 }
