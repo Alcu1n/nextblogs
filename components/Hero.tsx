@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ReactElement, useContext, useRef } from 'react';
+import { ReactElement, useContext, useRef, useState, useEffect } from 'react';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { ScrollContext } from './Providers/ScrollProvider';
 import DarkVeil from './DarkVeil';
@@ -10,6 +10,18 @@ import DarkVeil from './DarkVeil';
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
   const { scrollY } = useContext(ScrollContext);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
 
   let progress = 0;
   const { current: elContainer } = ref;
@@ -63,7 +75,7 @@ export default function Hero(): ReactElement {
         <DarkVeil
           speed={0.5}
           hueShift={56}
-          noiseIntensity={0.2}
+          noiseIntensity={isMobile ? 0.01 : 0.2}
           scanlineIntensity={0}
           scanlineFrequency={0.5}
           warpAmount={0}
