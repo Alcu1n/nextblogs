@@ -73,7 +73,7 @@ export default function Hero(): ReactElement {
       </div>
       <div className="pointer-events-none absolute inset-0">
         <DarkVeil
-          speed={0.5}
+          speed={1}
           hueShift={56}
           noiseIntensity={isMobile ? 0.01 : 0.2}
           scanlineIntensity={0}
